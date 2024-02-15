@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Sakila Database</h1>
+
+    <div id="buttons">
+        <button id="getProfiles">Get All Users</button>
+        <br>
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" placeholder="User ID">
+        <button id="getUser">Get User</button>
+
+        <div id="user-buttons" style="display:none">
+            <button id="getAlbums">Get Albums</button>
+            <button id="getPosts">Get Posts</button>
+            <button id="getTodos">Get Todos</button>
+        </div>
+
+        <div id="album-buttons" style="display:none">
+            <label for="albumId">Album ID:</label>
+            <input type="text" id="albumId" placeholder="Album ID">
+            <button id="getPhotos">Get Photos</button>
+
+        </div>
+
+        <div id="post-buttons" style="display:none">
+            <label for="postId">Post ID:</label>
+            <input type="text" id="postId" placeholder="Post ID">
+            <button id="getComments">Get Comments</button>
+        </div>
+    </div>
+    <div content>
+        <div id="table-data"></div>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
